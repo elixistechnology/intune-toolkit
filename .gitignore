@@ -1,0 +1,51 @@
+# PowerShell
+*.pdb
+*.log
+
+# Test Results
+TestResults*.xml
+Tests/*.Tests.ps1.bak
+coverage.xml
+*.coverage
+
+# Temporary files
+tmp/
+temp/
+.temp/
+
+# Visual Studio Code
+.vscode/
+.vs/
+
+# JetBrains IDEs
+.idea/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Package Files
+*.nupkg
+*.snupkg

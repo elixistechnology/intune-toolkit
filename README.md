@@ -113,7 +113,40 @@ The Intune Toolkit is a PowerShell-based solution designed to simplify the manag
 - **XML/**: Contains XAML files for defining the UI layout.
   - **Main.xaml:** XAML file for the main window layout.
   - **SelectionDialog.xaml:** XAML file for the selection dialog layout.
+- **Tests/**: Contains the test suite using Pester framework.
+  - **BasicFunctions.Tests.ps1:** Tests for core utility functions.
+  - **BasicLogging.Tests.ps1:** Tests for logging functionality.
+  - **Run-Tests.ps1:** Test runner script with multiple output formats.
+  - **README.md:** Detailed testing documentation and guidelines.
 - **Logs/**: Contains the log files generated during the execution of the toolkit.
+
+## Testing
+
+The Intune Toolkit includes a comprehensive test suite using **Pester** (PowerShell testing framework) to ensure code quality and reliability.
+
+### Running Tests
+
+```powershell
+# Run all tests
+.\Run-Tests.ps1
+
+# Run with XML output for CI/CD
+.\Run-Tests.ps1 -OutputFormat NUnitXml -OutputFile "TestResults.xml"
+```
+
+### Test Coverage
+
+The test suite covers:
+- **Core Functions**: Platform detection, application type formatting, Graph API interactions
+- **Logging System**: Message formatting, file operations, error handling
+- **Input Validation**: Edge cases, null/empty inputs, error scenarios
+
+### Requirements
+
+- PowerShell 7.0+
+- Pester 5.0+ (included with PowerShell)
+
+For detailed testing documentation, see [Tests/README.md](Tests/README.md).
 
 ## Logging
 
